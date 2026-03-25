@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		533DCE5B2F7227E000EF60D0 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 533DCE5A2F7227E000EF60D0 /* Config.xcconfig */; };
+		5385471F2F72FF1600D79427 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5385471E2F72FF1600D79427 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		533DCE5A2F7227E000EF60D0 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		53529D6B2F7225A900F3538A /* VirtualMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5385471E2F72FF1600D79427 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				533DCE5A2F7227E000EF60D0 /* Config.xcconfig */,
+				5385471E2F72FF1600D79427 /* README.md */,
 				53529D6D2F7225A900F3538A /* VirtualMachine */,
 				53529D6C2F7225A900F3538A /* Products */,
 			);
@@ -115,6 +118,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5385471F2F72FF1600D79427 /* README.md in Resources */,
 				533DCE5B2F7227E000EF60D0 /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
