@@ -19,35 +19,20 @@ A personal project focused on developing a functional macOS application using Xc
 
 ### Configuration
 
-This project supports optional local configuration overrides using a layered configuration approach.
+This project supports optional local configuration overrides using a layered approach.
 
 #### Base Configuration
 
-- `Config.xcconfig` is committed to the repository and contains shared project settings.
-- It is already configured to include a local override file (`Config.local.xcconfig`) if one exists.
+- `Config.xcconfig` (committed) contains shared project settings.
+- It conditionally includes a local override file (`Config.local.xcconfig`) if present.
 
 #### Local Overrides
 
 To customize settings for your local environment:
 
-1. Open the project in Xcode
-2. Create a new **Configuration Settings File** named:
-   ```
-   Config.local.xcconfig
-   ```
-3. Add any overrides you need, for example:
+1. Create a file at the project root named `Config.local.xcconfig`.
+2. Add only the values you need to override, for example:
 
-```xcconfig
-PRODUCT_BUNDLE_IDENTIFIER = com.yourname.VirtualMachine
-DEVELOPMENT_TEAM = YOUR_TEAM_ID
-```
-
-> ⚠️ Note:
-> `Config.local.xcconfig` is ignored by Git and should not be committed.
-
-#### Notes
-
-- Values in `Config.local.xcconfig` override those in `Config.xcconfig`
-- If the local file does not exist, the project will still build normally
-- Only include values that need to differ locally; do not duplicate the entire config
-- This approach avoids per-developer Git configuration and keeps the project fully shareable
+   ```xcconfig
+   PRODUCT_BUNDLE_IDENTIFIER = com.yourname.VirtualMachine
+   DEVELOPMENT_TEAM = YOUR_TEAM_ID
